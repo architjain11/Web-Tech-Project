@@ -1,12 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-</head>
+<head><title>TITANS.INC</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <style>
+
+.jumbotron {
+  background-color: #000033;
+  color: #ffffff;
+}
+.navbar {
+  margin-bottom: 0;
+  background-color: #000033;
+  z-index: 9999;
+  border: 0;
+  font-size: 14px !important;
+  line-height: 1.42857143 !important;
+  letter-spacing: 4px;
+  border-radius: 0;
+}
+
+.navbar li a, .navbar .navbar-brand {
+  color: #fff !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+  color: #f4511e !important;
+  background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+  color: #fff !important;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:#000033;
+  color: white;
+  text-align: right;
+}
     * {
   box-sizing: border-box;
 }
@@ -27,17 +66,11 @@ input[type=submit] {
   padding: 12px 20px;
   border: none;
   cursor: pointer;
+  margin-bottom: 100px;;
 }
 
 input[type=submit]:hover {
   background-color: #45a049;
-}
-
-/* Style the container/contact section */
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 10px;
 }
 
 /* Create two columns that float next to eachother */
@@ -63,7 +96,33 @@ input[type=submit]:hover {
   }
 }
 </style>
+</head>
 <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" target= "_self" href="C:\Users\HP\Desktop\NSUT BOOKS AND NOTES\3rd Sem\Web Technology\Web Pages\Project\Main Page.html"><img src="https://logosandtypes.com/wp-content/uploads/2020/08/telemundo.svg"  style="height:40px;width:40px;" alt="TITANS.INC"></a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right" style="font-family:verdana;">
+              <li style="color:#ffffff;"><a href="join.html">JOIN</a></li>
+              <li><a href="create.html">CREATE</a></li>
+              <li><a href="login.html">SIGN-IN</a></li>
+              <li><a href="signup.html">SIGN-UP</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="jumbotron text-center">
+      <img src="https://logosandtypes.com/wp-content/uploads/2020/08/telemundo.svg" class="rounded float-left" style="height:200px;width:200px;" alt="TITANS.INC">
+        <h1 style="font-family:Blippo;">TITANS.INC</h1>
+      </div>
     <center>
     <dive>
     <h1>Log In</h1>
@@ -74,6 +133,10 @@ input[type=submit]:hover {
             <input type="text" id="password" name="Password" placeholder="Password"  required><br>
             <input type="submit" value="Submit">
     </dive>
+    
 </center>
 </body>
+<div class="footer">
+    <p>Copyright &#169; TITANS INC.</p>
+  </div>
 </html>
